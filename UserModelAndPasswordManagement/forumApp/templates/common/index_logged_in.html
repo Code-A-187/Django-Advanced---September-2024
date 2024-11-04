@@ -1,0 +1,14 @@
+{% extends 'common/base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+    
+    <h1>Hello User!</h1>
+    
+    <h1>You are logged in</h1>
+    
+    {{ static_time|time:'s' }}
+    {{ dynamic_time|time:'s' }}
+    
+{% endblock %}
