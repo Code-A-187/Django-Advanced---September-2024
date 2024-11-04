@@ -1,5 +1,6 @@
 from datetime import datetime, time
 
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.forms import modelform_factory
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
@@ -9,7 +10,7 @@ from django.views.generic import TemplateView, RedirectView, ListView, FormView,
     DetailView
 
 from forumApp.decorators import measure_execution_time
-from forumApp.posts.forms import PostCreateForm, PostDeleteForm, SearchForm, PostEditForm, CommentFormSet
+from forumApp.posts.forms import PostCreateForm, PostDeleteForm, SearchForm, CommentFormSet
 from forumApp.posts.mixins import TimeRestrictedMixin
 from forumApp.posts.models import Post
 
@@ -52,18 +53,6 @@ class IndexView(TimeRestrictedMixin, TemplateView):
         else:
             return ['common/index.html']
 
-# def index(request):
-#     post_form = modelform_factory(
-#         Post,
-#         fields=('title', 'content', 'author', 'languages'),
-#     )
-#
-#     context = {
-#         "my_form": post_form,
-#     }
-#
-#     return render(request, 'common/index.html', context )
-
 
 class DashboardView(ListView, FormView):
     template_name = 'posts/dashboard.html'
@@ -83,44 +72,11 @@ class DashboardView(ListView, FormView):
         return queryset
 
 
-# def dashboard(request):
-#     form = SearchForm(request.GET)
-#     posts = Post.objects.all()
-#
-#     if request.method == 'GET':
-#         if form.is_valid():
-#             query = form.cleaned_data['query']
-#             posts = posts.filter(title__icontains=query)
-#
-#     context = {
-#         "posts": posts,
-#         'form': form,
-#
-#     }
-#
-#     return render(request, 'posts/dashboard.html', context)
-
-
-class AddPostView(CreateView):
+class AddPostView(LoginRequiredMixin, CreateView):
     model = Post
     form_class = PostCreateForm
     template_name = 'posts/add-post.html'
     success_url = reverse_lazy('dash')
-
-
-# def add_post(request):
-#     form = PostCreateForm(request.POST or None, request.FILES or None)
-#
-#     if request.method == 'POST':
-#         if form.is_valid():
-#             form.save()
-#             return redirect('dash')
-#
-#     context = {
-#         'form': form,
-#     }
-#
-#     return render(request, 'posts/add-post.html', context)
 
 
 class EditPostView(UpdateView):
@@ -134,25 +90,6 @@ class EditPostView(UpdateView):
         else:
             return modelform_factory(Post, fields=('content',))
 
-
-# def edit_post(request, pk):
-#     post = Post.objects.get(pk=pk)
-#
-#     if request.method == 'POST':
-#         form = PostEditForm(request.POST, instance=post)
-#
-#         if form.is_valid():
-#             form.save()
-#             return redirect('dash')
-#     else:
-#         form = PostEditForm(instance=post)
-#
-#     context = {
-#         'form': form,
-#         'post': post,
-#     }
-#
-#     return render(request, 'posts/edit-post.html', context)
 
 class PostDetailView(DetailView):
     model = Post
@@ -181,27 +118,6 @@ class PostDetailView(DetailView):
         return self.render_to_response(context)
 
 
-# def details_page(request, pk: int):
-#     post = Post.objects.get(pk=pk)
-#     formset = CommentFormSet(request.POST or None)
-#
-#     if request.method == 'POST':
-#         if formset.is_valid():
-#             for form in formset:
-#                 if form.cleaned_data:
-#                     comment = form.save(commit=False)
-#                     comment.post = post
-#                     comment.save()
-#             return redirect('details-post', pk=post.id)
-#
-#     context = {
-#         'post': post,
-#         'formset': formset,
-#     }
-#
-#     return render(request, 'posts/details-post.html', context)
-
-
 class DeletePostView(DeleteView, FormView):
     model = Post
     form_class = PostDeleteForm
@@ -212,21 +128,6 @@ class DeletePostView(DeleteView, FormView):
         pk = self.kwargs.get(self.pk_url_kwarg)
         post = Post.objects.get(pk=pk)
         return post.__dict__
-
-
-# def delete_post(request, pk: int):
-#     post = Post.objects.get(pk=pk)
-#     form = PostDeleteForm(instance=post)
-#     if request.method == 'POST':
-#         post.delete()
-#         return redirect('dash')
-#
-#     context = {
-#         'form': form,
-#         'post': post,
-#     }
-#
-#     return render(request, 'posts/delete-post.html', context)
 
 
 class RedirectHomeView(RedirectView):

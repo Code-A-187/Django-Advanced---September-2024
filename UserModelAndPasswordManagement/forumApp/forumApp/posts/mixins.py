@@ -18,14 +18,16 @@ class DisableFieldsMixin(forms.Form):
 
 
 class TimeRestrictedMixin:
-    start_time = time(9, 0)
-    end_time = time(17, 0)
-    forbidden_message = 'Access restricted at this time. Try again later! '
+    pass
 
-    def dispatch(self, request, *args, ** kwargs):
-        current_time = localtime().time() # Returns time in local timezone
-
-        if not(self.start_time <= current_time <= self.end_time):
-            return HttpResponseForbidden(self.forbidden_message)
-
-        return super().dispatch(request, *args, **kwargs)
+#     start_time = time(9, 0)
+#     end_time = time(17, 0)
+#     forbidden_message = 'Access restricted at this time. Try again later! '
+#
+#     def dispatch(self, request, *args, ** kwargs):
+#         current_time = localtime().time() # Returns time in local timezone
+#
+#         if not(self.start_time <= current_time <= self.end_time):
+#             return HttpResponseForbidden(self.forbidden_message)
+#
+#         return super().dispatch(request, *args, **kwargs)
