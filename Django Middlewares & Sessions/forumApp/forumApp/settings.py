@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'crispy_bootstrap4',
     
     'forumApp.posts.apps.PostsConfig',
-    "forumApp.accounts.apps.AccountsConfig"
+    "forumApp.accounts.apps.AccountsConfig",
+    "forumApp.common.apps.CommonConfig"
 
 ]
 
