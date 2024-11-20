@@ -2,12 +2,13 @@ from django.http import JsonResponse
 from drf_spectacular.utils import extend_schema
 from rest_framework import status
 from rest_framework.decorators import api_view
-from rest_framework.generics import ListAPIView, get_object_or_404
+from rest_framework.generics import ListAPIView, get_object_or_404, RetrieveAPIView
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from libraryApi.books.models import Book
-from libraryApi.books.serializers import BookSerializer
+from libraryApi.books.models import Book, Publisher
+from libraryApi.books.serializers import BookSerializer, PublisherHyperLinkSerializer, PublisherSerializer
+
 
 # from django.http import JsonResponse
 # from django.shortcuts import render
@@ -81,6 +82,10 @@ def list_books_view(request):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+@extend_schema(
+    request=BookSerializer,
+    responses={201: BookSerializer, 400: BookSerializer},
+)
 class ListBooksView(APIView):  # APIView is the base class same as View in Django
 
     def get(self, request):
@@ -101,9 +106,9 @@ class ListBooksView(APIView):  # APIView is the base class same as View in Djang
 
 
 @extend_schema(
-        request=BookSerializer,
-        responses={201: BookSerializer, 400: BookSerializer},
-    )
+    request=BookSerializer,
+    responses={201: BookSerializer, 400: BookSerializer},
+)
 class BookViewSet(APIView):
     @staticmethod
     def get_object(pk):
@@ -136,3 +141,14 @@ class BookViewSet(APIView):
         book = self.get_object(pk)
         book.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class PublisherDetail(RetrieveAPIView):
+    queryset = Publisher.objects.all()
+    serializer_class = PublisherSerializer
+
+
+class PublisherHyperlinkView(ListAPIView):
+    queryset = Publisher.objects.all()
+    serializer_class = PublisherHyperLinkSerializer
+
