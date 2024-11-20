@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e20c7f21-3e96-4547-8ce9-f49a6787ad69" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraryApi.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/migrations/0002_author_remove_book_author_book_author.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/demo.html" beforeDir="false" />
-    </list>
+    <list default="true" id="e20c7f21-3e96-4547-8ce9-f49a6787ad69" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,24 +32,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Django Server.libraryApi.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.libraryApi.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "django.template.preview.state": "SHOW_EDITOR",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Alterlab/Documents/GitHub/Django-Advanced---September-2024/DjangoRESTBasics/libraryApi",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Alterlab\Documents\GitHub\Django-Advanced---September-2024\DjangoRESTBasics\libraryApi\libraryApi\libraryApi" />
@@ -127,6 +100,7 @@
       <updated>1731837538438</updated>
       <workItem from="1731837572623" duration="13306000" />
       <workItem from="1732104365411" duration="1107000" />
+      <workItem from="1732105561092" duration="44000" />
     </task>
     <servers />
   </component>
