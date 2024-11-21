@@ -11,6 +11,7 @@ from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 
 from libraryApi.books.models import Book, Publisher
+from libraryApi.books.permissions import IsBookOwner
 from libraryApi.books.serializers import BookSerializer, PublisherHyperLinkSerializer, PublisherSerializer, \
     BookSimpleSerializer
 
@@ -94,13 +95,11 @@ class ListBooksView(ListCreateAPIView):  # APIView is the base class same as Vie
     authentication_classes = [TokenAuthentication]
 
 
-@extend_schema(
-    request=BookSerializer,
-    responses={201: BookSerializer, 400: BookSerializer},
-)
 class BookViewSet(RetrieveUpdateDestroyAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSimpleSerializer
+    permission_classes = [IsAuthenticated, IsBookOwner]
+    authentication_classes = [TokenAuthentication]
 
 
 class PublisherViewSet(ModelViewSet):
