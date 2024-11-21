@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6489628e-ffd9-4324-9882-b460ea903e71" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/libraryApi/accounts/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryApi/books/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryApi/books/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraryApi/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryApi/books/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryApi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryApi/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryApi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryApi/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +18,13 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -52,6 +60,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alterlab\Documents\GitHub\Django-Advanced---September-2024\DjangoRESTAdvanced\libraryApi\libraryApi" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="libraryApi" type="Python.DjangoServer" factoryName="Django server">
       <module name="libraryApi" />
@@ -102,7 +115,7 @@
       <workItem from="1732110142686" duration="178000" />
       <workItem from="1732110415272" duration="1296000" />
       <workItem from="1732111726353" duration="463000" />
-      <workItem from="1732112204444" duration="11482000" />
+      <workItem from="1732112204444" duration="13729000" />
     </task>
     <servers />
   </component>
@@ -127,6 +140,10 @@
           <url>file://$PROJECT_DIR$/libraryApi/books/urls.py</url>
           <line>9</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/libraryApi/books/views.py</url>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

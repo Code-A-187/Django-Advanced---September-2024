@@ -36,17 +36,20 @@ INSTALLED_APPS = [
     "unfold",  # before django.contrib.admin
     "unfold.contrib.filters",  # optional, if special filters are needed
     "unfold.contrib.forms",  # optional, if special form elements are needed
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     "libraryApi.books.apps.BooksConfig",
+    "libraryApi.accounts.apps.AccountsConfig",
+    
     "rest_framework",  # pip install djangorestframework
+    'rest_framework.authtoken',
     'drf_spectacular',  # for swagger
-    'corsheaders',  # pip install django-cors-headers
+    'corsheaders', # pip install django-cors-headers
 ]
 
 REST_FRAMEWORK = {
