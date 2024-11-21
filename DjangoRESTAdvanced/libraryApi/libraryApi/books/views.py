@@ -2,12 +2,14 @@ from django.http import JsonResponse
 from drf_spectacular.utils import extend_schema
 from rest_framework import status
 from rest_framework.decorators import api_view
-from rest_framework.generics import ListAPIView, get_object_or_404, RetrieveAPIView
+from rest_framework.generics import ListAPIView, get_object_or_404, RetrieveAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.viewsets import ModelViewSet
 
 from libraryApi.books.models import Book, Publisher
-from libraryApi.books.serializers import BookSerializer, PublisherHyperLinkSerializer, PublisherSerializer
+from libraryApi.books.serializers import BookSerializer, PublisherHyperLinkSerializer, PublisherSerializer, \
+    BookSimpleSerializer
 
 
 # from django.http import JsonResponse
@@ -109,41 +111,12 @@ class ListBooksView(APIView):  # APIView is the base class same as View in Djang
     request=BookSerializer,
     responses={201: BookSerializer, 400: BookSerializer},
 )
-class BookViewSet(APIView):
-    @staticmethod
-    def get_object(pk):
-        return get_object_or_404(Book, pk=pk)
-
-    @staticmethod
-    def serializer_valid(serializer):
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_200_OK)
-
-    def get(self, request, pk:  int):
-        book = self.get_object(pk)
-        serializer = BookSerializer(book)
-        return Response(serializer.data, status=status.HTTP_200_OK)
-
-    def put(self, request, pk: int):
-        book = self.get_object(pk)
-        serializer = BookSerializer(book, data=request.data)
-
-        return self.serializer_valid(serializer)
-
-    def patch(self, request, pk: int):
-        book = self.get_object(pk)
-        serializer = BookSerializer(book, data=request.data, partial=True)
-
-        return self.serializer_valid(serializer)
-
-    def delete(self, request, pk: int):
-        book = self.get_object(pk)
-        book.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
+class BookViewSet(RetrieveUpdateDestroyAPIView):
+    queryset = Book.objects.all()
+    serializer_class = BookSimpleSerializer
 
 
-class PublisherDetail(RetrieveAPIView):
+class PublisherViewSet(ModelViewSet):
     queryset = Publisher.objects.all()
     serializer_class = PublisherSerializer
 

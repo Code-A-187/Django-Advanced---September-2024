@@ -9,6 +9,12 @@ class AuthorSerializer(serializers.ModelSerializer):
         fields = ['id', 'name']
 
 
+class BookSimpleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Book
+        fields = "__all__"
+
+
 class BookSerializer(serializers.ModelSerializer):
     author = AuthorSerializer(many=True)
 
@@ -42,7 +48,7 @@ class BookSerializer(serializers.ModelSerializer):
 
 class PublisherSerializer(serializers.ModelSerializer):
     class Meta:
-        model=Publisher
+        model = Publisher
         fields = "__all__"
 
 

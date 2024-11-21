@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6489628e-ffd9-4324-9882-b460ea903e71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/libraryApi/books/migrations/0002_author_remove_book_author_book_author.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraryApi/books/migrations/0003_alter_author_name.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraryApi/books/migrations/0004_alter_author_name.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraryApi/books/migrations/0005_publisher_review.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryApi/books/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraryApi/books/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryApi/books/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraryApi/books/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryApi/books/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraryApi/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryApi/books/views.py" afterDir="false" />
@@ -107,7 +102,7 @@
       <workItem from="1732110142686" duration="178000" />
       <workItem from="1732110415272" duration="1296000" />
       <workItem from="1732111726353" duration="463000" />
-      <workItem from="1732112204444" duration="8900000" />
+      <workItem from="1732112204444" duration="11482000" />
     </task>
     <servers />
   </component>
@@ -130,7 +125,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/libraryApi/books/urls.py</url>
-          <line>5</line>
+          <line>9</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
