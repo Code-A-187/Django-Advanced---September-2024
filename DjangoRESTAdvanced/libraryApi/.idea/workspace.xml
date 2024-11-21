@@ -5,8 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6489628e-ffd9-4324-9882-b460ea903e71" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/66dbdc8f-511e-4b4b-b0c0-1921131f03bb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/66dbdc8f-511e-4b4b-b0c0-1921131f03bb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bf6609c8-9c22-48c5-9b93-096ecbb3ff1e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bf6609c8-9c22-48c5-9b93-096ecbb3ff1e/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2e2fc1b-9132-4383-8688-952773d6f809.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2e2fc1b-9132-4383-8688-952773d6f809/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryApi/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryApi/books/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/books/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/books/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/books/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/books/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/books/migrations/0002_author_remove_book_author_book_author.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/books/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/books/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/books/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/books/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/books/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/books/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/libraryApi/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/templates/demo.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,29 +62,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Django Server.libraryApi.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Alterlab/Documents/GitHub/Django-Advanced---September-2024/DjangoRESTAdvanced/libraryApi",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Django Server.libraryApi.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alterlab/Documents/GitHub/SimRacingApp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql_aurora_aws",
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql_aurora_aws&quot;,
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Alterlab\Documents\GitHub\Django-Advanced---September-2024\DjangoRESTAdvanced\libraryApi\libraryApi" />
@@ -112,7 +140,9 @@
       <workItem from="1732110142686" duration="178000" />
       <workItem from="1732110415272" duration="1296000" />
       <workItem from="1732111726353" duration="463000" />
-      <workItem from="1732112204444" duration="16496000" />
+      <workItem from="1732112204444" duration="17324000" />
+      <workItem from="1732194896405" duration="93000" />
+      <workItem from="1732197915697" duration="7000" />
     </task>
     <servers />
   </component>
