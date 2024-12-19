@@ -1,6 +1,9 @@
+from django.contrib.auth import get_user_model
 from django.db import models
 
 from todoApp.todos.choices import StateChoices
+
+UserModel = get_user_model()
 
 
 class Category(models.Model):
@@ -27,6 +30,12 @@ class Todo(models.Model):
     category = models.ForeignKey(
         to=Category,
         on_delete=models.CASCADE
+    )
+
+    assignees = models.ManyToManyField(
+        to=UserModel,
+        related_name="assigned_todos",
+        blank=True,
     )
 
     def __str__(self):
